@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding-bottom: 500px;">
+    <form action="index.html" method="POST" enctype="multipart/form-data">
+        <input type="text" name="username" placeholder="Kullanıcı Adınız"><br><br>
+        <input type="password" name="parola" placeholder="Parola"><br>
+        <input type="number" name="yas">
+        <p>Aşağıdan bir tanesini seçiniz</p>
+        <input type="radio" name="renk" id="renk1"><label for="renk1">Kırmızı</label>
+        <input type="radio" name="renk" id="renk2"><label for="renk2">siyah</label>
+        <input type="radio" name="renk" id="renk3" checked="checked"><label for="renk3">lacivert</label>
+        <input type="radio" name="renk" id="renk4"><label for="renk4">sarı</label>
+
+        <p>Aşağıdan sevdiğiniz meyvelerden bir kaçını seçiniz</p>
+        <input type="checkbox" name="secenek1" id="elma"><label for="elma">Elma</label>
+        <input type="checkbox" name="secenek2" id="armut"><label for="Armut">Armut</label>
+        <input type="checkbox" name="secenek3" id="kiraz"><label for="kiraz">kiraz</label>
+        <input type="checkbox" name="secenek4" id="muz"><label for="muz">Muz</label>
+        <input type="checkbox" name="secenek5" id="cilek"><label for="cilek">Çilek</label>
+
+        <p>Aşağıdan tarihi belirleyiniz</p>
+        <input type="date" name="tarih">
+
+        <p>Aşağıdan tarih ve saat belirleyiniz</p>
+        <input type="datetime-local" name="tarih">
+
+        <p>Resim Ekleyiniz</p>
+        <input type="file" name="resim">
+
+        <p>Aşağıya bir şeyler yazınız</p>
+        <textarea name="yazialani" style="width:300px; height:100px;" placeholder="Buraya Bir şeyler yazınız"></textarea>
+
+        <p>Aşağıdan bir il seçiniz</p>
+        <select name="secim">
+            <option>Birini seçiniz</option>
+            <option value="Antep">Antep</option>   
+            <option value="Urfa">Urfa</option>
+            <option value="Giresun" selected="selected">Giresun</option>
+            <option value="Ordu">Ordu</option>
+            <option value="Samsun">Samsun</option>
+        </select>
+
+        <br><br>
+       <input  type="submit" name="gonder" value="Gönder">
+       <button type="submit" name="gonder2">GÖNDER</button>
+       <br><br>
+       <button type="reset">SIFIRLA</button>
+
+    </form>
+</body>
+</html>
